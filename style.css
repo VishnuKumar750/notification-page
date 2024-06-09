@@ -22,8 +22,8 @@ body {
 }
 
 .container {
-    width: 90%;
-    max-width: 55em;
+    width: 100%;
+    max-width: 40em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,6 +68,11 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1em;
+    width: 93%;
+}
+
+.time {
+    color: var(--gb);
 }
 
 .item {
@@ -169,6 +174,15 @@ body {
     justify-content: center;
 }
 
+.kimg > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.kimg > div > p {
+    width: 80%;
+}
+
 
 .kimg > div > img {
     width: 2.5em;
@@ -180,6 +194,7 @@ body {
     padding: .8em 1.5em .5em .8em;
     margin: 1em 0 0 0;
     color: var(--dgb);
+    font-weight: 500;
 }
 
 
@@ -194,14 +209,17 @@ body {
 }
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
-    
+    .notifications {
+        width: 90%;
+    }
+
 .item-mark::after {
     content: "";
     width: .5em;
     height: .5em;
     position: absolute;
     top: 43%;
-    left: 50%;
+    left: 60%;
     background-color: var(--red);
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -242,13 +260,22 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    .item {
+        font-size: .8rem;
+    }
+
+    .item1 {
+        font-size: .8rem;
+
+    }
+
     .item-mark::after {
     content: "";
     width: .5em;
     height: .5em;
     position: absolute;
-    top: 15%;
-    left: 102%;
+    top: 10%;
+    left: 101%;
     background-color: var(--red);
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -263,7 +290,7 @@ body {
     width: .5em;
     height: .5em;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 102%;
     background-color: var(--red);
     border-radius: 50%;
@@ -277,8 +304,19 @@ body {
     border: 1px solid var(--lgb1);
     padding: .8em 1.5em .5em .8em;
     margin: 1em 0 0 0;
-    width: 32em;
+    width: 95%;
+    font-size: .75rem;
     color: var(--dgb);
+}
+
+.kimg {
+    display: flex;
+    width: 30em;
+    justify-content: space-between;
+}
+
+.kimg > div > p {
+    width: 100%;
 }
 
 }
